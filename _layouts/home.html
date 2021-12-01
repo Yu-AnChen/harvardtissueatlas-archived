@@ -8,13 +8,21 @@ layout: default
             <div class="hero__text-container">
                 <div class="hero__text">
                     
-                    <h1>{{ content }}</h1>
+                    <h1>{{ page['hero text'] }}</h1>
 
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="secondary">
+    <div class="secondary__content-wrap {% if page.wide_container %}secondary__content-wrap--wide{% else %}secondary__content-wrap--standard{% endif %}">
+        
+        {{ content }}
+
+    </div>
+</div>
 
 <section class="featured-data">
     <div class="featured-data__inner container-wide">
