@@ -1,20 +1,24 @@
 main:
-  - name: "People"
-    section_id: people
-    url: "/people"
-    target: "_self"
+  - name: "About"
+    section_id: about
+    url: ""
+    target: ""
+    children:
+      - name: "Projects"
+        url: "/projects"
+        target: "_self"
+      - name: "People"
+        section_id: people
+        url: "/people"
+        target: "_self"
   - name: "Publications"
     section_id: publications
     url: "/publications"
     target: "_self"
-  - name: "Projects"
-    section_id: projects
-    url: "/projects"
-    target: "_self"
-  - name: "Methods & Software"
-    section_id: methods-software
-    url: "/software"
-    target: "_self"
+  - name: "Methods"
+    section_id: methods
+    url: "https://www.cycif.org/"
+    target: "_blank"
   - name: "Data"
     section_id: data
     url: "/data"
